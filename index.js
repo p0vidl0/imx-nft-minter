@@ -24,7 +24,7 @@ const signer = new Wallet(PRIVATE_KEY).connect(getDefaultProvider(ETH_RPC));
  * @param {string} contract - NFT contract address
  * @param {string} receiver - Ethereum address of Passport wallet
  * @param {string} [tokenId] - integer numeric string, random value will be generated if not provided
- * @returns {Promise<{ contract: address; TOKEN_ID: string }>}
+ * @returns {Promise<{ contract: address; tokenId: string }>}
  */
 const mint = async (contract, receiver, tokenId) => {
   const id =
